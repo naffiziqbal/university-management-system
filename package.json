@@ -4,16 +4,21 @@
   "description": "",
   "main": "src/server.ts",
   "scripts": {
+    "start": "ts-node-dev --respawn --transpile-only ./src/server.ts",
     "dev": "tsc --watch",
     "lint:check": "eslint --ext .js,.ts .",
     "lint:ignore": "eslint --ignore-path .eslintignore --ext .js,.ts .",
     "lint:fix": "npm run lint -- --fix",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
-    "start": "ts-node-dev --respawn --transpile-only ./src/server.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint-prettier": "npm run lint:check && npm run format",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "author": "",
   "license": "ISC",
+  "lint-staged": {
+    "src/**/*.ts": "npm run lint-prettier"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
@@ -31,6 +36,8 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-n": "^15.7.0",
     "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.0.4"
