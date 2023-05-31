@@ -12,13 +12,11 @@
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
     "lint-prettier": "npm run lint:check && npm run format",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint-staged": "npm run lint-prettier",
     "prepare": "husky install"
   },
   "author": "",
   "license": "ISC",
-  "lint-staged": {
-    "src/**/*.ts": "npm run lint-prettier"
-  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
