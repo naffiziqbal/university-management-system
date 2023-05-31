@@ -7,19 +7,17 @@
     "start": "ts-node-dev --respawn --transpile-only ./src/server.ts",
     "dev": "tsc --watch",
     "lint:check": "eslint --ext .js,.ts .",
-    "lint:ignore": "eslint --ignore-path .eslintignore --ext .js,.ts .",
     "lint:fix": "npm run lint -- --fix",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
     "lint-prettier": "npm run lint:check && npm run format",
     "test": "echo \"Error: no test specified\" && exit 1",
-
     "prepare": "husky install"
+  },
+  "lint-staged": {
+    "src/**/*.ts": "npm run lint:prettier"
   },
   "author": "Nafiz Iqbal",
   "license": "ISC",
-  "lint-staged": {
-    "src/**/*.js,.ts": "npm run lint-prettier"
-  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
