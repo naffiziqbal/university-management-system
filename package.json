@@ -15,8 +15,11 @@
     "lint-staged": "npm run lint-prettier",
     "prepare": "husky install"
   },
-  "author": "",
+  "author": "Nafiz Iqbal",
   "license": "ISC",
+  "lint-staged": {
+    "src/**/*.js,.ts": "npm run lint-prettier"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
