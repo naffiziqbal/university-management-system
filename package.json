@@ -14,7 +14,7 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "src/**/*.ts": "npm run lint:prettier"
+    "src/**/*.ts": "npm run lint-prettier"
   },
   "author": "Nafiz Iqbal",
   "license": "ISC",
