@@ -3,7 +3,6 @@ import { createUsertoDb, getUsersFromDb } from './user.services'
 
 export const createUser = async (req: Request, res: Response) => {
   const { user } = req.body
-  console.log('User', user)
   const result = createUsertoDb(user)
   res.status(200).json({
     Success: true,

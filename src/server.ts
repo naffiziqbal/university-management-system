@@ -7,14 +7,13 @@ const port = config.port
 async function main() {
   try {
     await mongoose.connect(config.database_url as string)
-    console.log('Database Connection Successfull')
 
     app.listen(port, () => {
-      console.log(' Server Running')
+      'Database Connection Successfull'
     })
   } catch (err) {
-    console.log(err)
+    const data = 'Something Went Worng'
+    return data
   }
 }
-
 main()
