@@ -2,9 +2,13 @@ import { Request, Response } from 'express'
 import { createUsertoDb, getUsersFromDb } from './user.services'
 
 export const createUser = async (req: Request, res: Response) => {
-  const data = req.body
-  const user = createUsertoDb(data)
-  res.send(user)
+  const { user } = req.body
+  console.log('User', user)
+  const result = createUsertoDb(user)
+  res.status(200).json({
+    Success: true,
+    data: result,
+  })
 }
 
 export const getUser = async (req: Request, res: Response) => {
