@@ -1,36 +1,55 @@
-import winston from 'winston'
+import { createLogger, format, transports } from 'winston'
 import path from 'path'
+const { combine, timestamp, label, printf } = format
 
-export const infoLogger = winston.createLogger({
+const myFormat = printf(({ level, message, label, timestamp }) => {
+  return `${timestamp} [${label}] ${level}: ${message}`
+})
+export const infoLogger = createLogger({
   level: 'info',
-  format: winston.format.json(),
+  format: combine(
+    label({ label: 'right meow!' }),
+    timestamp(),
+    myFormat,
+    timestamp()
+  ),
   defaultMeta: { service: 'user-service' },
   transports: [
-    new winston.transports.Console(),
-    new winston.transports.File({
+    new transports.Console(),
+    new transports.File({
       filename: path.join(process.cwd(), 'logs', 'winston', 'info.log'),
     }),
   ],
 })
 
-export const errorLogger = winston.createLogger({
+export const errorLogger = createLogger({
   level: 'error',
-  format: winston.format.json(),
+  format: combine(
+    label({ label: 'right meow!' }),
+    timestamp(),
+    myFormat,
+    timestamp()
+  ),
   defaultMeta: { service: 'user-service' },
   transports: [
-    new winston.transports.Console(),
-    new winston.transports.File({
+    new transports.Console(),
+    new transports.File({
       filename: path.join(process.cwd(), 'logs', 'winston', 'error.log'),
     }),
   ],
 })
-export const successLogger = winston.createLogger({
-  level: 'success',
-  format: winston.format.json(),
+export const successLogger = createLogger({
+  level: 'info',
+  format: combine(
+    label({ label: 'right meow!' }),
+    timestamp(),
+    myFormat,
+    timestamp()
+  ),
   defaultMeta: { service: 'user-service' },
   transports: [
-    new winston.transports.Console(),
-    new winston.transports.File({
+    new transports.Console(),
+    new transports.File({
       filename: path.join(process.cwd(), 'logs', 'winston', 'success.log'),
     }),
   ],

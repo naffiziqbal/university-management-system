@@ -1,6 +1,0 @@
-{"level":"error","message":"querySrv ENODATA _mongodb._tcp.cluster1.zscbcon.mongodb.net","service":"user-service"}
-{"level":"error","message":"querySrv ENODATA _mongodb._tcp.cluster1.zscbcon.mongodb.net","service":"user-service"}
-{"level":"error","message":"querySrv ENODATA _mongodb._tcp.cluster1.zscbcon.mongodb.net","service":"user-service"}
-{"level":"info","message":"production","service":"user-service"}
-{"level":"error","message":"querySrv ENODATA _mongodb._tcp.cluster1.zscbcon.mongodb.net","service":"user-service"}
-{"level":"error","message":"querySrv ENODATA _mongodb._tcp.cluster1.zscbcon.mongodb.net","service":"user-service"}
