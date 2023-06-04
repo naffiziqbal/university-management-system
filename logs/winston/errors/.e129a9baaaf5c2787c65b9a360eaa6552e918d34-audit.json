@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/errors/.e129a9baaaf5c2787c65b9a360eaa6552e918d34-audit.json",
+    "files": [
+        {
+            "date": 1685867867947,
+            "name": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/errors/phu-2023-06-04-14-error.log",
+            "hash": "086c555428b42609c66c83cf58e7de6728c287d7d30a8d6a8beb8b21b23fe4b4"
+        }
+    ],
+    "hashType": "sha256"
+}
