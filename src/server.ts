@@ -2,6 +2,7 @@ import mongoose from 'mongoose'
 import app from './app/app'
 import config from './config'
 import { errorLogger, successLogger } from './share/logger'
+import ApiError from './erros/apiErrors'
 
 const port = config.port
 
@@ -13,8 +14,9 @@ async function main() {
     app.listen(port, () => {
       successLogger.info(`Application is Listening on Port ${port} `)
     })
-  } catch (err: unknown) {
+  } catch (err: any) {
     errorLogger.error(err.message)
+    throw new ApiError(400, 'Server Connection Failed')
   }
 }
 main()

@@ -1,0 +1,60 @@
+{
+  message: 'The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.',
+  level: 'error',
+  label: 'PH',
+  timestamp: '2023-06-06T03:43:33.269Z'
+}
+{
+  message: 'queryTxt ESERVFAIL cluster1.zscbcon.mongodb.net',
+  level: 'error',
+  label: 'PH',
+  timestamp: '2023-06-06T03:53:02.472Z'
+}
+{
+  message: 'The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.',
+  level: 'error',
+  label: 'PH',
+  timestamp: '2023-06-06T03:53:37.814Z'
+}
+{
+  message: 'The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.',
+  level: 'error',
+  label: 'PH',
+  timestamp: '2023-06-06T03:53:46.845Z'
+}
+{
+  message: 'The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.',
+  level: 'error',
+  label: 'PH',
+  timestamp: '2023-06-06T03:55:55.870Z'
+}
+{
+  message: 'The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.',
+  level: 'error',
+  label: 'PH',
+  timestamp: '2023-06-06T03:56:05.948Z'
+}
+{
+  message: 'The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.',
+  level: 'error',
+  label: 'PH',
+  timestamp: '2023-06-06T03:56:21.188Z'
+}
+{
+  message: 'The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.',
+  level: 'error',
+  label: 'PH',
+  timestamp: '2023-06-06T03:56:40.392Z'
+}
+{
+  message: 'The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.',
+  level: 'error',
+  label: 'PH',
+  timestamp: '2023-06-06T03:56:57.022Z'
+}
+{
+  message: 'The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.',
+  level: 'error',
+  label: 'PH',
+  timestamp: '2023-06-06T03:56:58.993Z'
+}

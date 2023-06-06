@@ -15,7 +15,7 @@ export const infoLogger = createLogger({
   format: combine(label({ label: 'PH' }), timestamp(), myFormat, prettyPrint()),
   defaultMeta: { service: 'user-service' },
   transports: [
-    new transports.Console(),
+    // new transports.Console(),
     new DailyRotateFile({
       filename: path.join(
         process.cwd(),
@@ -36,7 +36,7 @@ export const errorLogger = createLogger({
   level: 'error',
   format: combine(label({ label: 'PH' }), timestamp(), myFormat, prettyPrint()),
   transports: [
-    new transports.Console(),
+    // new transports.Console(),
     new DailyRotateFile({
       filename: path.join(
         process.cwd(),
@@ -56,7 +56,7 @@ export const successLogger = createLogger({
   level: 'info',
   format: combine(label({ label: 'PH' }), timestamp(), myFormat, prettyPrint()),
   transports: [
-    new transports.Console(),
+    // new transports.Console(),
     new DailyRotateFile({
       filename: path.join(
         process.cwd(),
