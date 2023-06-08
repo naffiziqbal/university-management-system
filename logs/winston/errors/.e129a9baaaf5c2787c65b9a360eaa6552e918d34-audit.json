@@ -1,40 +1,40 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 14
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/errors/.e129a9baaaf5c2787c65b9a360eaa6552e918d34-audit.json",
+  "files": [
+    {
+      "date": 1685867867947,
+      "name": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/errors/phu-2023-06-04-14-error.log",
+      "hash": "086c555428b42609c66c83cf58e7de6728c287d7d30a8d6a8beb8b21b23fe4b4"
     },
-    "auditLog": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/errors/.e129a9baaaf5c2787c65b9a360eaa6552e918d34-audit.json",
-    "files": [
-        {
-            "date": 1685867867947,
-            "name": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/errors/phu-2023-06-04-14-error.log",
-            "hash": "086c555428b42609c66c83cf58e7de6728c287d7d30a8d6a8beb8b21b23fe4b4"
-        },
-        {
-            "date": 1685965204671,
-            "name": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/errors/phu-2023-06-05-17-error.log",
-            "hash": "87c03661344fc0c25e63b6d27fb9a4cb0cca18643dcf619bc2131768e40ab733"
-        },
-        {
-            "date": 1685966847395,
-            "name": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/errors/phu-2023-06-05-18-error.log",
-            "hash": "ced6a72bcab369cf606f26e9cea0f224ab019fcd6a5532caaf23ace1f51880b2"
-        },
-        {
-            "date": 1685985530372,
-            "name": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/errors/phu-2023-06-05-23-error.log",
-            "hash": "0840688d29b3a4b8706f1a9a46c9ca1c0a4c3ccb2b7fcc89529bd4f14ea925dd"
-        },
-        {
-            "date": 1686022869391,
-            "name": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/errors/phu-2023-06-06-09-error.log",
-            "hash": "d74a3e98928b8753dd15478f3a04e78fbd8c1a5f7212416180e4863362b6a274"
-        },
-        {
-            "date": 1686024021186,
-            "name": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/errors/phu-2023-06-06-10-error.log",
-            "hash": "884137043361a6919a58897291e2ccaed5f0038cfae7046b5c74d0e26d224045"
-        }
-    ],
-    "hashType": "sha256"
+    {
+      "date": 1685965204671,
+      "name": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/errors/phu-2023-06-05-17-error.log",
+      "hash": "87c03661344fc0c25e63b6d27fb9a4cb0cca18643dcf619bc2131768e40ab733"
+    },
+    {
+      "date": 1685966847395,
+      "name": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/errors/phu-2023-06-05-18-error.log",
+      "hash": "ced6a72bcab369cf606f26e9cea0f224ab019fcd6a5532caaf23ace1f51880b2"
+    },
+    {
+      "date": 1685985530372,
+      "name": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/errors/phu-2023-06-05-23-error.log",
+      "hash": "0840688d29b3a4b8706f1a9a46c9ca1c0a4c3ccb2b7fcc89529bd4f14ea925dd"
+    },
+    {
+      "date": 1686022869391,
+      "name": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/errors/phu-2023-06-06-09-error.log",
+      "hash": "d74a3e98928b8753dd15478f3a04e78fbd8c1a5f7212416180e4863362b6a274"
+    },
+    {
+      "date": 1686024021186,
+      "name": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/errors/phu-2023-06-06-10-error.log",
+      "hash": "884137043361a6919a58897291e2ccaed5f0038cfae7046b5c74d0e26d224045"
+    }
+  ],
+  "hashType": "sha256"
 }

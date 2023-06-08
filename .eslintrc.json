@@ -4,9 +4,7 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": [
-    "@typescript-eslint"
-  ],
+  "plugins": ["@typescript-eslint"],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
@@ -14,14 +12,12 @@
   ],
   "rules": {
     "no-unused-vars": "warn",
+    "prefer-const": "off",
     "no-console": "error",
-    "no-undefined": "error",
+    "no-undefined": "off",
     "no-unused-expressions": "error",
     "no-unreachable": "error",
-    "@typescript-eslint/consistent-type-definitions": [
-      "error",
-      "type"
-    ]
+    "@typescript-eslint/consistent-type-definitions": ["error", "type"]
   },
   "env": {
     "browser": true,
