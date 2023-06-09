@@ -34,6 +34,16 @@
       "date": 1686024021186,
       "name": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/errors/phu-2023-06-06-10-error.log",
       "hash": "884137043361a6919a58897291e2ccaed5f0038cfae7046b5c74d0e26d224045"
+    },
+    {
+      "date": 1686248299485,
+      "name": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/errors/phu-2023-06-09-00-error.log",
+      "hash": "a9bcc5688ae67709a1d2f90c0e9b927ab7d7ef6abc36d26d9ca34d3353cfc67b"
+    },
+    {
+      "date": 1686305183011,
+      "name": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/errors/phu-2023-06-09-16-error.log",
+      "hash": "5c7b72a074d04dfa254be463a4085c5ff8104b742639440ef9b3e1b06632f141"
     }
   ],
   "hashType": "sha256"

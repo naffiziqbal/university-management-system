@@ -6,14 +6,6 @@ export type IGenericErrorMessage = {
 }
 
 export const HandleValidationErr = (err: mongoose.Error.ValidationError) => {
-  {
-    /*
-//? To Convert the properties of an Object into Array we use {* Object.values(arr) *}
-
- //?  CastError typically indicates that a value couldn't be cast or converted to the expected type defined in the schema
-
-*/
-  }
   const errors: IGenericErrorMessage[] = Object.values(err.errors).map(
     (ele: mongoose.Error.ValidatorError | CastError) => {
       return {
@@ -31,3 +23,10 @@ export const HandleValidationErr = (err: mongoose.Error.ValidationError) => {
     errorMessage: errors,
   }
 }
+
+/*
+//? To Convert the properties of an Object into Array we use {* Object.values(arr) *}
+
+//?  CastError typically indicates that a value couldn't be cast or converted to the expected type defined in the schema
+
+*/
