@@ -12,8 +12,8 @@ app.use('/api/v1/', router)
 
 //! Testing
 
-app.get('/', (req: Request, res: Response, next: NextFunction) => {
-  throw new ApiError(404, 'Error')
+app.get('/un', async (req: Request, res: Response, next: NextFunction) => {
+  throw new Error('Testing Error Logger')
   // next("Custom Err On Next Function")
 })
 
