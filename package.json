@@ -7,7 +7,7 @@
     "start": "ts-node-dev --respawn --transpile-only ./src/server.ts",
     "dev": "tsc --watch",
     "lint:check": "eslint --ext .js,.ts .",
-    "lint:fix": "npm run lint -- --fix",
+    "lint:fix": "eslint --fix --ext .js,.jsx ",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
     "lint-prettier": "npm run lint:check && npm run format",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -24,7 +24,8 @@
     "express": "^4.18.2",
     "mongoose": "^7.2.1",
     "winston": "^3.9.0",
-    "winston-daily-rotate-file": "^4.7.1"
+    "winston-daily-rotate-file": "^4.7.1",
+    "zod": "^3.21.4"
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",

@@ -1,9 +1,9 @@
-import mongoose, { CastError } from 'mongoose'
+import mongoose, { CastError } from 'mongoose';
 
 export type IGenericErrorMessage = {
-  path: string
-  message: string
-}
+  path: string | number;
+  message: string;
+};
 
 export const HandleValidationErr = (err: mongoose.Error.ValidationError) => {
   const errors: IGenericErrorMessage[] = Object.values(err.errors).map(
@@ -11,18 +11,18 @@ export const HandleValidationErr = (err: mongoose.Error.ValidationError) => {
       return {
         path: ele?.path,
         message: ele?.message,
-      }
+      };
     }
-  )
+  );
 
   // eslint-disable-next-line no-unused-vars
-  const statusCode = 400
+  const statusCode = 400;
   return {
     statusCode,
     message: 'Validaton Error',
     errorMessage: errors,
-  }
-}
+  };
+};
 
 /*
 //? To Convert the properties of an Object into Array we use {* Object.values(arr) *}
