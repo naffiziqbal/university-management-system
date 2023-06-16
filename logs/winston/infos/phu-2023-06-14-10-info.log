@@ -1,7 +1,0 @@
-{
-  message: 'SIGTERM Recived',
-  level: 'info',
-  service: 'user-service',
-  label: 'PH',
-  timestamp: '2023-06-14T04:25:17.801Z'
-}

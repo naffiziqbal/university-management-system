@@ -9,4 +9,4 @@ router.get('/users', getUser);
 
 router.post('/create-user', validateRequest(createUserZodSchema), createUser);
 
-export default router;
+export const UserRoute = router;
