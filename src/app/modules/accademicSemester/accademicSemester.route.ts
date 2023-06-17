@@ -3,6 +3,7 @@ import { validateRequest } from '../../../middleware/validateRequest';
 import { semesterValidation } from './accademicSemester.validation';
 import {
   createAccademicSemester,
+  deleteSemester,
   getSemester,
 } from './accademicSemester.controller';
 
@@ -14,5 +15,6 @@ router.post(
   createAccademicSemester
 );
 router.get('/semester', getSemester);
+router.delete('/semester-del', deleteSemester);
 
 export const SemesterRoute = router;

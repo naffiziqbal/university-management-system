@@ -12,3 +12,8 @@ export const getSemesterFromDb = async () => {
   const result = await AccademicSemester.find({});
   return result;
 };
+
+export const deleteSemesterFromDb = async () => {
+  const result = await AccademicSemester.deleteMany({});
+  return result;
+};

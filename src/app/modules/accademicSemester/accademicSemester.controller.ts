@@ -1,8 +1,10 @@
 import { RequestHandler } from 'express';
 import {
   createAccademicSemesterToDb,
+  deleteSemesterFromDb,
   getSemesterFromDb,
 } from './accademicSemester.services';
+import status from 'http-status';
 
 export const createAccademicSemester: RequestHandler = async (
   req,
@@ -28,6 +30,18 @@ export const getSemester: RequestHandler = async (req, res, next) => {
     res.status(200).json({
       status: 'Success',
       data: result,
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+export const deleteSemester: RequestHandler = async (req, res, next) => {
+  try {
+    const result = await deleteSemesterFromDb();
+    res.status(200).json({
+      status: 'Success',
+      data: result,
+      message: 'Database Deleted',
     });
   } catch (error) {
     next(error);
