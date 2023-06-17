@@ -4,7 +4,6 @@ import {
   deleteSemesterFromDb,
   getSemesterFromDb,
 } from './accademicSemester.services';
-import status from 'http-status';
 
 export const createAccademicSemester: RequestHandler = async (
   req,

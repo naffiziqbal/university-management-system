@@ -37,12 +37,6 @@ const AccademicSemesterSchema = new Schema<IAccademicSemester>({
     enum: accademicSemesterMonths,
   },
 });
-
-export const AccademicSemester = model<
-  IAccademicSemester,
-  IAccademicSemesterModel
->('AccademicSemester', AccademicSemesterSchema);
-
 AccademicSemesterSchema.pre('save', async function (next) {
   const isExist = await AccademicSemester.findOne({
     title: this.title,
@@ -54,3 +48,8 @@ AccademicSemesterSchema.pre('save', async function (next) {
   }
   next(); // Next Hook From Mongoose
 });
+
+export const AccademicSemester = model<
+  IAccademicSemester,
+  IAccademicSemesterModel
+>('AccademicSemester', AccademicSemesterSchema);
