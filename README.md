@@ -1,6 +1,6 @@
-Setting up an Express backend with ESLint, Prettier, Husky, and lint-staged is crucial for code quality and efficiency. ESLint catches errors and enforces coding standards, Prettier ensures consistent formatting, and Husky with lint-staged prevents issues from entering the codebase. This setup saves time, enhances collaboration, and promotes clean, error-free code.
+# Setting up an Express backend with ESLint, Prettier, Husky, and lint-staged is crucial for code quality and efficiency. ESLint catches errors and enforces coding standards, Prettier ensures consistent formatting, and Husky with lint-staged prevents issues from entering the codebase. This setup saves time, enhances collaboration, and promotes clean, error-free code.
 
-Lets setup Express backend with eslint prettier husky and lint-staged
+ ## Lets setup Express backend with eslint prettier husky and lint-staged
 1. Initialize the project:
 npm init
 2. Install Typescript:
