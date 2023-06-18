@@ -1,4 +1,4 @@
-import { Request, RequestHandler, Response } from 'express';
+import { NextFunction, Request, RequestHandler, Response } from 'express';
 import {
   createAccademicSemesterToDb,
   deleteSemesterFromDb,
@@ -9,9 +9,11 @@ import catchAsync from '../../../catchAsync';
 // catchAsync is higherOrder Function to Handle Try Catch block
 
 export const createAccademicSemester = catchAsync(
-  async (req: Request, res: Response) => {
+  async (req: Request, res: Response, next: NextFunction) => {
     const semester = req.body;
     const result = await createAccademicSemesterToDb(semester);
+    next();
+
     res.status(200).json({
       status: 'Success',
       message: 'Semester Successfully Created',
@@ -20,13 +22,16 @@ export const createAccademicSemester = catchAsync(
   }
 );
 
-export const getSemester = catchAsync(async (req: Request, res: Response) => {
-  const result = await getSemesterFromDb();
-  res.status(200).json({
-    status: 'Success',
-    data: result,
-  });
-});
+export const getSemester = catchAsync(
+  async (req: Request, res: Response, next: NextFunction) => {
+    const result = await getSemesterFromDb();
+    next();
+    res.status(200).json({
+      status: 'Success',
+      data: result,
+    });
+  }
+);
 
 // This is For Development Puspose to Handle Dababase Delatation by request rather than go to Database
 
