@@ -2,7 +2,7 @@
 
  ## Lets setup Express backend with eslint prettier husky and lint-staged 
 1. Initialize the project:
-`npm init`
+```npm init```
 2. Install Typescript:
 `yarn add -D typescript
 npm install typescript --save-dev`
