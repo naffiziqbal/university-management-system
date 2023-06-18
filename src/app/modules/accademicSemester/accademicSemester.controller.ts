@@ -1,12 +1,15 @@
-import { RequestHandler } from 'express';
-import { createAccademicSemesterToDb } from './accademicSemester.services';
+import { NextFunction, Request, RequestHandler, Response } from 'express';
+import {
+  createAccademicSemesterToDb,
+  deleteSemesterFromDb,
+  getSemesterFromDb,
+} from './accademicSemester.services';
+import catchAsync from '../../../catchAsync';
 
-export const createAccademicSemester: RequestHandler = async (
-  req,
-  res,
-  next
-) => {
-  try {
+// catchAsync is higherOrder Function to Handle Try Catch block
+
+export const createAccademicSemester = catchAsync(
+  async (req: Request, res: Response, next: NextFunction) => {
     const semester = req.body;
     const result = await createAccademicSemesterToDb(semester);
     res.status(200).json({
@@ -14,7 +17,29 @@ export const createAccademicSemester: RequestHandler = async (
       message: 'Semester Successfully Created',
       data: result,
     });
-  } catch (error) {
-    next(error);
+
+    next();
   }
+);
+
+export const getSemester = catchAsync(
+  async (req: Request, res: Response, next: NextFunction) => {
+    const result = await getSemesterFromDb();
+    res.status(200).json({
+      status: 'Success',
+      data: result,
+    });
+    next();
+  }
+);
+
+// This is For Development Puspose to Handle Dababase Delatation by request rather than go to Database
+
+export const deleteSemester: RequestHandler = async (req, res) => {
+  const result = await deleteSemesterFromDb();
+  res.status(200).json({
+    status: 'Success',
+    data: result,
+    message: 'Database Deleted',
+  });
 };

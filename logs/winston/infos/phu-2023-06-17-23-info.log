@@ -1,0 +1,70 @@
+{
+  message: 'SIGTERM Recived',
+  level: 'info',
+  service: 'user-service',
+  label: 'PH',
+  timestamp: '2023-06-17T17:01:04.223Z'
+}
+{
+  message: 'SIGTERM Recived',
+  level: 'info',
+  service: 'user-service',
+  label: 'PH',
+  timestamp: '2023-06-17T17:26:51.622Z'
+}
+{
+  message: 'SIGTERM Recived',
+  level: 'info',
+  service: 'user-service',
+  label: 'PH',
+  timestamp: '2023-06-17T17:37:52.031Z'
+}
+{
+  message: 'SIGTERM Recived',
+  level: 'info',
+  service: 'user-service',
+  label: 'PH',
+  timestamp: '2023-06-17T17:44:04.710Z'
+}
+{
+  message: 'SIGTERM Recived',
+  level: 'info',
+  service: 'user-service',
+  label: 'PH',
+  timestamp: '2023-06-17T17:48:26.586Z'
+}
+{
+  message: 'SIGTERM Recived',
+  level: 'info',
+  service: 'user-service',
+  label: 'PH',
+  timestamp: '2023-06-17T17:51:09.016Z'
+}
+{
+  message: 'SIGTERM Recived',
+  level: 'info',
+  service: 'user-service',
+  label: 'PH',
+  timestamp: '2023-06-17T17:51:30.227Z'
+}
+{
+  message: 'SIGTERM Recived',
+  level: 'info',
+  service: 'user-service',
+  label: 'PH',
+  timestamp: '2023-06-17T17:52:15.686Z'
+}
+{
+  message: 'SIGTERM Recived',
+  level: 'info',
+  service: 'user-service',
+  label: 'PH',
+  timestamp: '2023-06-17T17:53:18.970Z'
+}
+{
+  message: 'SIGTERM Recived',
+  level: 'info',
+  service: 'user-service',
+  label: 'PH',
+  timestamp: '2023-06-17T17:53:57.730Z'
+}

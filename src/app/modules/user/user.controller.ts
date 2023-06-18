@@ -1,9 +1,10 @@
-import { RequestHandler } from 'express';
+import { NextFunction, Request, Response } from 'express';
 import { createUsertoDb, getUsersFromDb } from './user.services';
 import { createUserZodSchema } from './user.validation';
+import catchAsync from '../../../catchAsync';
 
-export const createUser: RequestHandler = async (req, res, next) => {
-  try {
+export const createUser = catchAsync(
+  async (req: Request, res: Response, next: NextFunction) => {
     await createUserZodSchema.parseAsync(req);
     const { user } = req.body;
     const result = await createUsertoDb(user);
@@ -12,15 +13,18 @@ export const createUser: RequestHandler = async (req, res, next) => {
       meassage: 'Data Created Successfully',
       data: result,
     });
-  } catch (error) {
-    next(error);
+    next();
   }
-};
+);
 
-export const getUser: RequestHandler = async (req, res) => {
-  const users = await getUsersFromDb();
-  res.status(200).json({
-    status: 'Satisfied',
-    data: users,
-  });
-};
+export const getUser = catchAsync(
+  async (req: Request, res: Response, next: NextFunction) => {
+    const users = await getUsersFromDb();
+
+    res.status(200).json({
+      status: 'Satisfied',
+      data: users,
+    });
+    next();
+  }
+);

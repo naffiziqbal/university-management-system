@@ -1,8 +1,7 @@
 import mongoose from 'mongoose';
 import app from './app/app';
 import config from './config';
-import { errorLogger, infoLogger, successLogger } from './share/logger';
-// import ApiError from './erros/apiErrors'
+import { errorLogger, infoLogger, successLogger } from './shared/logger';
 import { Server } from 'http'; // Default Package of Node
 
 //   Handle Uncaught Exeption

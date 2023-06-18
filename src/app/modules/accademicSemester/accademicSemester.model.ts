@@ -8,6 +8,8 @@ import {
   accademicSemesterMonths,
   accademicSemesterTitles,
 } from './accademicSemester.constants';
+import ApiError from '../../../erros/apiErrors';
+import status from 'http-status';
 
 const AccademicSemesterSchema = new Schema<IAccademicSemester>({
   title: {
@@ -34,6 +36,17 @@ const AccademicSemesterSchema = new Schema<IAccademicSemester>({
     required: true,
     enum: accademicSemesterMonths,
   },
+});
+AccademicSemesterSchema.pre('save', async function (next) {
+  const isExist = await AccademicSemester.findOne({
+    title: this.title,
+    year: this.year,
+  });
+  if (isExist) {
+    //Using Http-status Package
+    throw new ApiError(status.CONFLICT, 'Duplicate Data Input');
+  }
+  next(); // Next Hook From Mongoose
 });
 
 export const AccademicSemester = model<
