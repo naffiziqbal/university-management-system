@@ -1,35 +1,35 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 14
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/successes/.bc7ed75866ead8ca385b938f09db193b988cfae2-audit.json",
+  "files": [
+    {
+      "date": 1686936332928,
+      "name": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/successes/phu-2023-06-16-23-success.log",
+      "hash": "8160bc97b04f719d845c00a85b85d0bb0f456a959d08f54b648744781e0a229a"
     },
-    "auditLog": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/successes/.bc7ed75866ead8ca385b938f09db193b988cfae2-audit.json",
-    "files": [
-        {
-            "date": 1686936332928,
-            "name": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/successes/phu-2023-06-16-23-success.log",
-            "hash": "8160bc97b04f719d845c00a85b85d0bb0f456a959d08f54b648744781e0a229a"
-        },
-        {
-            "date": 1687020630397,
-            "name": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/successes/phu-2023-06-17-22-success.log",
-            "hash": "cb199674d2876b06c9526c6f9791afc246cebbe5da31536695189ff7d9018d17"
-        },
-        {
-            "date": 1687022444961,
-            "name": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/successes/phu-2023-06-17-23-success.log",
-            "hash": "c10a54259e0382406ec97ed72e726fb859191d38130eec7843735a17eeb4bd31"
-        },
-        {
-            "date": 1687072311298,
-            "name": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/successes/phu-2023-06-18-13-success.log",
-            "hash": "239791f187a2bc28da3e6a517fa06550f6f9981a8aa9661f2fdbd81c2cd647da"
-        },
-        {
-            "date": 1687080074278,
-            "name": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/successes/phu-2023-06-18-15-success.log",
-            "hash": "4c622ff0de2d25a474ff39ecd9937a22ec4271f35631728e69aed60e0a027388"
-        }
-    ],
-    "hashType": "sha256"
+    {
+      "date": 1687020630397,
+      "name": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/successes/phu-2023-06-17-22-success.log",
+      "hash": "cb199674d2876b06c9526c6f9791afc246cebbe5da31536695189ff7d9018d17"
+    },
+    {
+      "date": 1687022444961,
+      "name": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/successes/phu-2023-06-17-23-success.log",
+      "hash": "c10a54259e0382406ec97ed72e726fb859191d38130eec7843735a17eeb4bd31"
+    },
+    {
+      "date": 1687072311298,
+      "name": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/successes/phu-2023-06-18-13-success.log",
+      "hash": "239791f187a2bc28da3e6a517fa06550f6f9981a8aa9661f2fdbd81c2cd647da"
+    },
+    {
+      "date": 1687080074278,
+      "name": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/successes/phu-2023-06-18-15-success.log",
+      "hash": "4c622ff0de2d25a474ff39ecd9937a22ec4271f35631728e69aed60e0a027388"
+    }
+  ],
+  "hashType": "sha256"
 }
