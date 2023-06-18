@@ -7,7 +7,7 @@ import { HandleValidationErr, IGenericErrorMessage } from '../erros/err';
 import ApiError from '../erros/apiErrors';
 import { handleZodError } from '../erros/handleZodError';
 import { ZodError } from 'zod';
-import { errorLogger } from '../share/logger';
+import { errorLogger } from '../shared/logger';
 
 export const globaErrorHandler: ErrorRequestHandler = (
   error,

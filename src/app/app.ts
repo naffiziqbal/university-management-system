@@ -1,16 +1,17 @@
 import express, { Application, NextFunction, Request, Response } from 'express';
 import cors from 'cors';
 import { UserRoute } from './modules/user/user.router';
-import { successLogger } from '../share/logger';
+import { successLogger } from '../shared/logger';
 import ApiError from '../erros/apiErrors';
 import { globaErrorHandler } from '../middleware/globalErrorHandler';
 import { SemesterRoute } from './modules/accademicSemester/accademicSemester.route';
+import globalRouter from './routes/globalRoutes';
 
 const app: Application = express();
 app.use(cors());
+
 app.use(express.json());
-app.use('/api/v1/', UserRoute);
-app.use('/api/v1/', SemesterRoute);
+app.use('/api/v1/', globalRouter);
 
 //! Testing
 

@@ -7,6 +7,7 @@ import { AccademicSemester } from './accademicSemester.model';
 export const createAccademicSemesterToDb = async (
   payload: IAccademicSemester
 ) => {
+  // Semester Code Validation
   if (accademicSemesterTitlesCodeMapper[payload.title] !== payload.code) {
     throw new ApiError(httpStatus.BAD_REQUEST, 'Invalid Semester Code');
   }

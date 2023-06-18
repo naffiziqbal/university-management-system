@@ -14,7 +14,7 @@ router.post(
   validateRequest(semesterValidation.createAccademicSemesterZodSchema),
   createAccademicSemester
 );
-router.get('/semester', getSemester);
+router.get('/semesters', getSemester);
 router.delete('/semester-del', deleteSemester);
 
 export const SemesterRoute = router;
