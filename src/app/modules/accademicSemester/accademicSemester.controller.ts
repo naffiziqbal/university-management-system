@@ -12,24 +12,24 @@ export const createAccademicSemester = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
     const semester = req.body;
     const result = await createAccademicSemesterToDb(semester);
-    next();
-
     res.status(200).json({
       status: 'Success',
       message: 'Semester Successfully Created',
       data: result,
     });
+
+    next();
   }
 );
 
 export const getSemester = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
     const result = await getSemesterFromDb();
-    next();
     res.status(200).json({
       status: 'Success',
       data: result,
     });
+    next();
   }
 );
 

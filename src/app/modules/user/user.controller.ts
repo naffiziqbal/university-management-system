@@ -8,24 +8,23 @@ export const createUser = catchAsync(
     await createUserZodSchema.parseAsync(req);
     const { user } = req.body;
     const result = await createUsertoDb(user);
-    next();
-
     res?.status(200)?.json({
       Success: true,
       meassage: 'Data Created Successfully',
       data: result,
     });
+    next();
   }
 );
 
 export const getUser = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
     const users = await getUsersFromDb();
-    next();
 
     res.status(200).json({
       status: 'Satisfied',
       data: users,
     });
+    next();
   }
 );
