@@ -25,14 +25,7 @@ export const createAccademicSemester = catchAsync(
 
 export const getSemesters = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
-    // const paginationOptions = {
-    //   page: Number(req.query.page),
-    //   limit: Number(req.query.limit),
-    //   sortBy: req.query.sortBy,
-    //   sortOrder: req.query.sortOrder,
-    // };
-    const paginationOptions = pick(req.query, paginationFields);
-
+    // const paginationOptions = pick(req.query, paginationFields);
     // const result = await getSemesterFromDb(paginationOptions);
     // res.status(200).json({
     //   status: 'Success',
