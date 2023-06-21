@@ -1,7 +1,10 @@
 import httpStatus from 'http-status';
 import ApiError from '../../../erros/apiErrors';
 import { accademicSemesterTitlesCodeMapper } from './accademicSemester.constants';
-import { IAccademicSemester } from './accademicSemester.interface';
+import {
+  IAccademicSemester,
+  IPaginationType,
+} from './accademicSemester.interface';
 import { AccademicSemester } from './accademicSemester.model';
 
 export const createAccademicSemesterToDb = async (
@@ -15,7 +18,7 @@ export const createAccademicSemesterToDb = async (
   return result;
 };
 
-export const getSemesterFromDb = async () => {
+export const getSemesterFromDb = async (payload: IPaginationType) => {
   const result = await AccademicSemester.find({});
   return result;
 };
