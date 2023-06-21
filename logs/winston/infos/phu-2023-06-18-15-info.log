@@ -5,3 +5,59 @@
   label: 'PH',
   timestamp: '2023-06-18T09:21:54.465Z'
 }
+{
+  message: 'SIGTERM Recived',
+  level: 'info',
+  service: 'user-service',
+  label: 'PH',
+  timestamp: '2023-06-18T09:45:22.803Z'
+}
+{
+  message: 'SIGTERM Recived',
+  level: 'info',
+  service: 'user-service',
+  label: 'PH',
+  timestamp: '2023-06-18T09:47:46.896Z'
+}
+{
+  message: 'SIGTERM Recived',
+  level: 'info',
+  service: 'user-service',
+  label: 'PH',
+  timestamp: '2023-06-18T09:53:23.616Z'
+}
+{
+  message: 'SIGTERM Recived',
+  level: 'info',
+  service: 'user-service',
+  label: 'PH',
+  timestamp: '2023-06-18T09:54:40.960Z'
+}
+{
+  message: 'SIGTERM Recived',
+  level: 'info',
+  service: 'user-service',
+  label: 'PH',
+  timestamp: '2023-06-18T09:55:07.138Z'
+}
+{
+  message: 'SIGTERM Recived',
+  level: 'info',
+  service: 'user-service',
+  label: 'PH',
+  timestamp: '2023-06-18T09:55:53.782Z'
+}
+{
+  message: 'SIGTERM Recived',
+  level: 'info',
+  service: 'user-service',
+  label: 'PH',
+  timestamp: '2023-06-18T09:57:00.801Z'
+}
+{
+  message: 'SIGTERM Recived',
+  level: 'info',
+  service: 'user-service',
+  label: 'PH',
+  timestamp: '2023-06-18T09:57:15.280Z'
+}

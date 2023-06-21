@@ -25,3 +25,10 @@ export type IAccademicSemester = {
 };
 
 export type IAccademicSemesterModel = Model<IAccademicSemester, object>;
+
+export type IPaginationType = {
+  page?: number;
+  limit?: number;
+  sortBy?: string;
+  sortOrder?: 'asc' | 'desc';
+};

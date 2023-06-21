@@ -4,7 +4,7 @@ import { semesterValidation } from './accademicSemester.validation';
 import {
   createAccademicSemester,
   deleteSemester,
-  getSemester,
+  getSemesters,
 } from './accademicSemester.controller';
 
 const router = Router();
@@ -14,7 +14,7 @@ router.post(
   validateRequest(semesterValidation.createAccademicSemesterZodSchema),
   createAccademicSemester
 );
-router.get('/semesters', getSemester);
+router.get('/semesters', getSemesters);
 router.delete('/semester-del', deleteSemester);
 
 export const SemesterRoute = router;

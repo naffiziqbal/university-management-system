@@ -29,6 +29,11 @@
       "date": 1687080074276,
       "name": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/errors/phu-2023-06-18-15-error.log",
       "hash": "e8a8a435dfdc7f5cd688c84cdad13184a7669d139747ee32f9a96d3862302981"
+    },
+    {
+      "date": 1687082945591,
+      "name": "/home/nafiziqbal/Desktop/Next_Level_Course/projects/university-management/logs/winston/errors/phu-2023-06-18-16-error.log",
+      "hash": "920465cb6b90f693e1f0c3b12a0251280d1b61b2b732b500e881dadc495b47b6"
     }
   ],
   "hashType": "sha256"

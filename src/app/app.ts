@@ -11,16 +11,16 @@ app.use('/api/v1/', globalRouter);
 
 //! Testing
 
-app.get('/un', async (req: Request, res: Response, next: NextFunction) => {
-  throw new Error('Testing Error Logger');
-  // next("Custom Err On Next Function")
-});
+// app.get('/un', async (req: Request, res: Response, next: NextFunction) => {
+//   throw new Error('Testing Error Logger');
+//   // next("Custom Err On Next Function")
+// });
 
 //** Error Handler  */
 app.use(globaErrorHandler);
 
 //** Global Error handler */
-app.use((req: Request, res: Response, next: NextFunction) => {
+app.use((req: Request, res: Response) => {
   res.status(200).json({
     success: false,
     message: 'No API Found',

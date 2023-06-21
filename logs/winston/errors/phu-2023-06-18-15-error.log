@@ -1,0 +1,36 @@
+{
+  errno: undefined,
+  code: 'ENODATA',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster1.zscbcon.mongodb.net',
+  level: 'error',
+  message: 'Failde To Connect Database querySrv ENODATA _mongodb._tcp.cluster1.zscbcon.mongodb.net',
+  stack: 'Error: querySrv ENODATA _mongodb._tcp.cluster1.zscbcon.mongodb.net\n' +
+    '    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:251:17)',
+  label: 'PH',
+  timestamp: '2023-06-18T09:42:29.418Z'
+}
+{
+  errno: undefined,
+  code: 'ENODATA',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster1.zscbcon.mongodb.net',
+  level: 'error',
+  message: 'Failde To Connect Database querySrv ENODATA _mongodb._tcp.cluster1.zscbcon.mongodb.net',
+  stack: 'Error: querySrv ENODATA _mongodb._tcp.cluster1.zscbcon.mongodb.net\n' +
+    '    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:251:17)',
+  label: 'PH',
+  timestamp: '2023-06-18T09:42:47.450Z'
+}
+{
+  errno: undefined,
+  code: 'ENODATA',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster1.zscbcon.mongodb.net',
+  level: 'error',
+  message: 'Failde To Connect Database querySrv ENODATA _mongodb._tcp.cluster1.zscbcon.mongodb.net',
+  stack: 'Error: querySrv ENODATA _mongodb._tcp.cluster1.zscbcon.mongodb.net\n' +
+    '    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:251:17)',
+  label: 'PH',
+  timestamp: '2023-06-18T09:45:29.226Z'
+}
