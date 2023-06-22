@@ -1,4 +1,4 @@
-import { createLogger, format } from 'winston';
+import { createLogger, format, transports } from 'winston';
 import path from 'path';
 import DailyRotateFile from 'winston-daily-rotate-file';
 const { combine, timestamp, label, printf, prettyPrint } = format;

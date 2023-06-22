@@ -2,10 +2,11 @@ import { NextFunction, Request, RequestHandler, Response } from 'express';
 import {
   createAccademicSemesterToDb,
   deleteSemesterFromDb,
+  getSemesterFromDb,
 } from './accademicSemester.services';
-import catchAsync from '../../../catchAsync';
+import catchAsync from '../../../shared/catchAsync';
 import { IPaginationType } from './accademicSemester.interface';
-import { pick } from '../../../pick';
+import { pick } from '../../../shared/pick';
 import { paginationFields } from '../../../globalConstants/paginationConstance';
 
 // catchAsync is higherOrder Function to Handle Try Catch block
@@ -25,13 +26,14 @@ export const createAccademicSemester = catchAsync(
 
 export const getSemesters = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
-    // const paginationOptions = pick(req.query, paginationFields);
-    // const result = await getSemesterFromDb(paginationOptions);
-    // res.status(200).json({
-    //   status: 'Success',
-    //   data: result,
-    // });
-    // next();
+    const paginationOptions = pick(req.query, paginationFields);
+    const result = await getSemesterFromDb(paginationOptions);
+    res.status(200).json({
+      status: 'Success',
+      data: result.data,
+      meta: result.meta,
+    });
+    next();
   }
 );
 

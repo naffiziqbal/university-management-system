@@ -4,6 +4,8 @@ import config from './config';
 import { errorLogger, infoLogger, successLogger } from './shared/logger';
 import { Server } from 'http'; // Default Package of Node
 
+/* eslint-disable no-console */
+
 //   Handle Uncaught Exeption
 process.on('uncaughtException', error => {
   errorLogger.error(error.message);
@@ -17,13 +19,16 @@ async function main() {
   try {
     await mongoose.connect(config.database_url as string);
     successLogger.info('Database Connection Successfull');
+    console.log('Database Connection Successfull');
 
     server = app.listen(port, () => {
       successLogger.info(`Application is Listening on Port ${port} `);
+      console.log(`Application is Listening on Port ${port} `);
     });
     //eslint-disable-next-line
   } catch (error: any) {
     errorLogger.error('Failde To Connect Database', error);
+    console.log('Failde To Connect Database', error);
   }
 
   //  To Handle abrupt Server Crash
